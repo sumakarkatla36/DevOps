@@ -41,6 +41,219 @@ pwd --> will give present working directory
 mkdir --> make directory
 
 
+df --> disk space used
+
+free -->The free command is used to display memory (RAM) and swap usage on a Linux system.
+
+nproc -->  no of cpus
+
+
+#!/bin/bash
+
+we need to provide the suitable executable according to the Script
+
+#!/bin/bash
+
+#########################
+#AUTHOR : sumakar
+#DATE   : 6/27/2026
+#
+#THIS SCRIPT OYTPUTS THE NODE HEALTH
+#
+#VERSION 1
+###############################
+
+We need to provide metadata for understanding purpose
+
+df -h -->printing the diskspace
+
+
+free -g --> printing the free memory
+
+nproc --> noof cpus
+
+
+there are two ways we can write the shell scripting
+1.writing the echo statements between the shell scripting
+
+ex: echo "print the diskspace"
+df -h
+echo "print the memory"
+free -g
+echo "print the cpus"
+nproc
+
+2.
+using echo statements is not feasible because in 1000 lines of code we cannot use echo statements in between them
+
+
+we will use set -x #debug mode
+
+set -x  will be used for the shell scripting to run in the debug mode
+
+ex we can see the output
+
+before every command it will give the command that is running before the scripting
+
+to know the processes that is running in the server the command used is ps -ef
+ps -->processes
+ef -->entire processes
+
+in every virtual machine python process will be there must and should
+
+to get the processes id the command used is ps -ef it will show the process
+ps -ef | grep "amazon" this command used to filter the processes
+
+ps -ef --> printing all the information about the running process
+
+grep --> it is used as a filter
+
+to get the process id the command used is 
+
+| --> it is used to send the output of the first command as input for the second command
+
+date | echo "date is" --> this will prints today is because date is a default shell command
+it will sends the output to stdin but pipecommand is to take the information from the output 
+but the date command will send the output to stdin this is the reason it will not printing the 
+date
+
+awk --> it will give the process information for particular coloumns
+
+ex :  ps -ef | grep amazon | awk -F " " '{print $2}'
+
+if we use | we need to use set -e or set -o pipefail it is the best practice
+
+set -e --> it exitss the script when there is an error
+
+set -o is very very important
+
+
+everytime there is an error we need to go to the logfile
+logfile -  find the errors in the logfile
+
+cat logfile | grep error
+
+whenever the logss are appended the people will upload the log files to s3 
+we can retrive the logfile using curl command
+
+ su --> switch user
+
+find --> it is used to find the files and folders
+
+Loops
+------
+1..if Loop
+2. ifelse Loop
+3. for Loop
+
+ifelse
+----------
+
+#!/bin/bash
+
+if[expression]
+then  
+   something to do
+else
+    something  to do
+fi
+
+
+ex: a=4 , b=10
+
+if[$a>$b]
+then 
+  echo"a is greater than b"
+else
+  echo"b is greater than a"
+fi
+
+Forloops
+---------------------------------------
+# iterations  -> for
+
+print numbers from 1 to 10
+in this case we use for loop
+
+for i in {1.100};do echo $1;done
+
+trap is used for trapping signals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
