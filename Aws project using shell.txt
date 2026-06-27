@@ -52,3 +52,4 @@ echo "print list of IAM"
 aws iam list-users
 
 
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
