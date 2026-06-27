@@ -1,0 +1,54 @@
+touch command is used to create the files
+ls commandd is used to list all the files
+ls -ltr will show all the information about the files
+man command is used to give the information about the command
+when ever your creating automation we only need to use touch command
+
+when ever we create a shell file the Line we need to use is #!/bin/bash
+
+why we need to write those Shebang?
+the shebang is used as the executables
+
+using echo "my name is sumakar" in shell scripting
+
+to save a file :wq!
+
+ cat command is used to Read the file
+ 
+how to execute a file ?
+sh Devops.sh
+  or
+./ Devops.sh
+
+whenever a file is not executing we need to change the permissions of the file
+
+chmod command used to grants permissions in linuxx
+
+ch --> change
+mod --> modifications
+
+chmod has 3 Read write execute
+
+421
+->4 Read
+->2 write
+->1 Execute
+
+History --> it will show you all the commands that are entered
+
+pwd --> will give present working directory
+
+mkdir --> make directory
+
+
+
+
+
+
+
+
+
+
+
+
+
