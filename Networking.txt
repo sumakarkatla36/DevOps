@@ -1,0 +1,95 @@
+IP ADDRESS 
+-------------------------
+it is used to create a unique id for a device
+
+using ip v4 it will create huge no of ipaddress
+
+4 bytes or 32 bits each byte is separated by a dot
+
+0-255*0-255*0-255*0-255 ip addresses we can create
+
+Subnets
+----------------------------------------
+subnet is basically identified as sub networking
+
+in a network we can crete we can split the network for
+security
+privacy
+isolation
+
+for the security purpose
+
+there are two types of subnets
+1.private subnet -> it does not have access to internet
+2.public subnet -> it has the access to the internet
+
+we can give routing we need to route it to the internet gateway to  provide the internet
+
+how we can split the ip-addresses to the subnets?
+whenever you are creating subnets it will asks for cidr range it will explain how many ip addresses
+available for the subnets
+
+how does cidr works ?
+we will goto aws
+goto VPC
+inside the vpc we goto the subnets
+it will aks for the cidrr
+we will give 172.12.3.0/24
+/24 will give 256 ip addresses
+
+how did i know 256 ip address we need /24 ?
+it is very simple
+pick up any range between the ip address below 255
+represent it in the octate format
+ 
+192
+172
+10 
+are used for creating a private subnets
+
+ports
+-----------------
+to bind an application we use ports
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
