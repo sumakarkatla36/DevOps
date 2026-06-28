@@ -1,0 +1,44 @@
+git and git hub
+--------------------
+Version controlling
+
+the fundamental concept of git and github is version controlling system
+
+it addresses two major problems
+1.sharing the code
+2.versioning
+
+Version control
+CVS AND SVN IS centralized version control system
+Git is the Distributed version system
+
+what is a fork?
+create a copy of entire code is called fork.with a different name
+code is distributed
+
+git is a distributed version system it is a opensource 
+ 
+.git will track all the files in the git
+
+everything in git is tracked as objects
+
+hooks --> using hooks we can prevent pushing of password or api tokens
+
+config --> it is used to configure git credentials
+
+git diff --> it is a command used to what are the changes that happened in the files
+
+to keep the track of files we need to commit the files
+
+git log --> will show the commits in the files or keep the track of files
+
+if you want to go to the previous commits we need to copy the commit id
+git reset --hard <commit-id>
+
+ex: cat calculator.sh
+
+another way we can swith to any versions
+
+hhow do we share this code ?
+in the github we can share the code.
+
