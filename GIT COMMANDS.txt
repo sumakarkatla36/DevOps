@@ -1,0 +1,209 @@
+git will track .git for every reference
+
+git init command is used to create or initialize a git repository
+
+git will have proper tracking mechanisam
+
+primary thing of git is version controlling
+
+git log --> it will show you all the logs
+
+git push is used to push the code into github
+
+what is the git workflow which is used ?
+git add && git commit -m "" && git push -u origin main
+
+git clone is used to pull the code from github
+
+what is the difference between clone and fork?
+you can download  the code using git clone command where as fork is used as copy of the 
+code at that particular date
+
+git is a distributed version system
+
+how can i create another branch  in git ?
+to create a branch the command used is 
+-->git branch feature
+other way is 
+---------------------
+-->git checkout -b division
+
+ git checkout is used to switch the branches
+ 
+to merge the branches
+--------------------------------
+we can do three things
+1.git merge
+2.git rebase
+3.git cherry-pick
+
+git cherry-pick
+-------------------------------
+git log division
+it will show the division logs 
+
+git cherry-pick <commit-id>
+
+if cherry pick is that easy why we need to use merge or rebase?
+it is easy when there is only one or two commits it is not simple for that reason 
+we will use merge or rebase
+
+create a new branches
+----------------------
+git checkout MergeExample
+
+vim calculatorr.sh
+
+#!/bin/bash
+x=a+B
+#division
+x=a/b
+
+push this code
+
+goto main brannch by using the command git checkout main
+
+create another branch by using the command
+git checkout -b rebase example
+
+vim calculator.sh
+
+add multiplication 
+
+add percentages
+
+push all the code
+
+git log
+
+it will show all the commits
+
+if you want to get the commits in small way git log --oneline
+
+
+git log mergeexample --oneline
+
+let us get the all the changes to the main branch
+
+git checkout main
+
+let us get the rebase and merge change into main
+
+switch to main
+
+git merge mergeexample
+
+git log
+
+git rebase rebaseExample
+
+how to fix the merge conflicts?
+go to the file sit with the developer and discuss 
+
+remove all the merge conflicts are there
+
+after fixing the conflicts git   add and push
+
+after that merge rebase rebaseExample
+
+or git rebase --continue
+
+git log
+
+it will show all the commits
+
+main branch -> test commit
+main branch -> mergeExample 
+main branch ->rebaseExample ->percentage is added
+
+git rebase will get updated in a linear way
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
