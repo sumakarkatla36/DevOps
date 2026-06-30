@@ -1,0 +1,38 @@
+what is a branch ?
+
+what is a good branching stratergy ?
+calculator 
+|  >1st 
+
+|  >2nd 
+
+|  >3rd push
+
+              ->feature branch
+			    | >1st push
+			    
+				| >2nd push
+				
+				| >3rd push
+
+whenever the feature branch is finshed then it will be merged to the main branch
+
+Release BRANCH
+------------------------------------------------
+Any applications will be delivered to customers 
+we usully build the applications from release branch
+we create a release branch
+then release the applications
+
+main branches will actively changed
+
+Kubernetes
+-------------------------
+
+master or main is always kept upto date
+
+eventually any changes will goto master branch 
+
+Release always happen from release branch only
+
+
