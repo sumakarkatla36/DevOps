@@ -1,0 +1,16 @@
+Create a server
+How to Install Ansible in the Server
+
+here iam using Amazon Linux we need to install for Linux
+
+UPDATE THE PACKAGES
+sudo dnf update -y
+
+INSTALL THE Ansible
+sudo dnf install ansible -y
+
+Verify the Version 
+ansible --version
+
+if you use the ansible we need two servers one is ansible server and the other is the Target server
+

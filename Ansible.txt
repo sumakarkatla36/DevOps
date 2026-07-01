@@ -39,5 +39,3 @@ YAML Also used in kubernetes
 we can write ouur own ansible modules
 
 what is the differenve between puppet and ansible or chef vs ansible ?
-
-
