@@ -1,0 +1,40 @@
+configuartion Management
+--------------------------------
+configuring the server
+
+ex if there are no of servers for example there is an update in all the server we cant manually
+upadate the server one by one we can configure it by using ansible
+another ex
+--------------
+if we want to install git in all the servers we can install using Ansible
+
+Ansible is a configuarion management tool
+
+Advantages 
+-------------
+if we want to install anything in any kind of the server ansible is used to install
+
+we can configure multiple servers using Ansible
+
+to manage this thousands of servers we can use configuartion management tools like 
+Ansible,Puppet,Chef,Salt but the most commonly used is Ansible
+
+why Ansible ?
+-----------------------------
+Architecture of puppet and Ansible
+puppet is a pull mechanisam model
+Ansible is a push Mechanisam Model
+
+Puppet is a Master Agent Architecture where as Ansible is a Agent less Architecture
+
+Ansible comes up with dynamic Inventory it will auto detect the updates 
+
+Ansible is easy with windows and linux
+
+Ansible is pretty simple in puppet we need to wrrite the script in puppet language whhere as
+Ansible playbooks in YAML format
+
+YAML Also used in kubernetes
+
+we can write ouur own ansible modules
+
