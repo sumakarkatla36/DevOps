@@ -14,3 +14,127 @@ ansible --version
 
 if you use the ansible we need two servers one is ansible server and the other is the Target server
 
+using the ansible server we need to configure the Target server
+
+how to setup passwordless authentication
+
+go to the ansible instance and talk with the private address of the Target server
+
+ssh-keygen
+it will generate a pub key and private key
+it will asks for the location
+private key is used to login to the machine
+always share the public key
+
+Ansible Playbook
+--------------------
+we write everything in ansible is called ansible playbooks
+
+ansible adhoc commands
+----------------------
+to run ansible adhoc commands 
+inventory
+--------------------------
+it will store all the server ip addresses
+
+ansible -i inventory file location <ip address>
+
+ansible -i inventory all -m "shell" -a "touch devops class" -->it is ansible adhoc commands
+
+-m --> modules
+-a --> what is the command that is used to run
+
+Playbook
+---------------------
+vim first-playbook.yaml
+
+ex:create a nginx server and restart the nginx server
+
+--- -->it indicatees it is a yaml file
+-name: Install and start Nginx
+ hosts:all
+ become:root
+ 
+ tasks:
+  - name: install nginx
+    apt:
+	 name: nginx
+	 state: present
+  - name: start nginx
+    shell: systemctl start nginx
+	       or
+    service: 
+	 name: nginx
+	 state: started
+	 
+save the file
+
+execute the playbook by using ansible-playbook -i inventory first-playbook.yaml
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   
+-name:my second playbook
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
