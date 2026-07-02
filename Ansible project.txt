@@ -70,20 +70,6 @@ ex:create a nginx server and restart the nginx server
 save the file
 
 execute the playbook by using ansible-playbook -i inventory first-playbook.yaml
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -94,6 +80,15 @@ execute the playbook by using ansible-playbook -i inventory first-playbook.yaml
 -name:my second playbook
  
 
+
+how to create a ansible role and what iis the use of ansible role ?
+
+ansible-galaxy role init kubernetes
+
+what is the use of it ?
+it is used to write the ansible playbooks  in a simple way
+
+what is file foolders in roles?
 
 
 
