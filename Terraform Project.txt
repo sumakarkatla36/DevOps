@@ -47,4 +47,5 @@ why the terraform state file should be placed in remote server because
 5.security
 6.cicd compatibility
 
+s3 Dynamodb will lock the statefile when other user uses the terraform state file
 
