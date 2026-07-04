@@ -1,0 +1,50 @@
+Terraform 
+-----------
+Manage any infrastructure
+track you infrastructure
+Automate changes
+Standardize configurations
+collaborate
+
+
+Terraform --> Teraform provider --> Target api
+
+Hashicorp will take care of api
+
+
+in the statefile we can keep track of the changes
+
+Terraform lifecycle
+--------------------
+1.write the terraform files
+
+terraform will support dry run
+the command used is terraform Plan
+
+
+then go ahead with the terraform apply
+
+How to Install Terraform
+-------------------------------
+terraform basically runs on four commands
+1.terraform init
+2.terraform plan
+3.terraform apply
+4.terraform destroy
+
+terraform init will initialize the terraform
+
+how to write terraform script
+
+whenever you do a change in the terraform script you need to reinitialize the files
+by using terraform init
+
+why the terraform state file should be placed in remote server because
+1.stateLocking
+2.prventing the Loss of state file
+3.Team collaborate
+4.Versioning and recovery
+5.security
+6.cicd compatibility
+
+
