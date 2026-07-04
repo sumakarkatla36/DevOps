@@ -1,0 +1,50 @@
+create a ec2 instance with the name jenkins ubuntu flavour
+
+and follow the steps in the jenkins documentation
+
+Jenkins Master is the place wherre jenkins is installed
+
+Jenkins Master will be used for the scheduling of the cron jobs of the application
+
+if everything runs on single jenkins master it will be difficult to manage everything 
+because if one team will work on java version 17 and other team will work on java version 20
+then it will be difficult to work on single jenkins master
+
+they create a jenkins master and they create worker nodes for specific Teams
+
+this architecture was very good before 3 years but now a days the microservices are becoming in huge range
+
+for example there are 3 worker nodes in that one is windows. the windows worker node is basically rarely used
+for that the ec2 instance is always sitting idle so that the resources are wasting.
+
+
+to solve this problem using jenkins and docker as Agents 
+we will run jenkins using docker containers
+
+docker containers are light in weight
+
+containers can be anytime created updated destroyed
+
+How to configure docker as container and docker as Agent?
+we have jenkins installed and  also access jenkins
+
+to configure docker we need to Install docker in the same Machine
+
+docker typically run on a single source of truth that is docker daemon
+
+by default it is not accessible to other user
+
+only root user has access to the daemon 
+
+if we want access to the jenkins user and ec2-user is
+sudo su -
+usermod -aG docker jenkins
+usermod -aG docker ec2-user
+systemctl restart docker
+
+if anyone wants to create the container they must and should be the part of the docker group
+
+
+
+
+
