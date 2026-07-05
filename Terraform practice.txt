@@ -1,0 +1,125 @@
+Terraform
+--------------
+1.it is used as Infrastructure as code
+2.it is used to build modify and manage infrastructure
+
+->automates infrastructure provisioning instead of manual console configuration
+->enables version control,collaboration and repeatable deployments
+->reduce the human errors while improving scalability and consistency
+
+Infrastructure as code
+-----------------------
+IAC is the practice of managing IT Infrastructure using configuration files rather than manual,interactive
+configuration tools
+Declarative:ex:you tell terraform you want 5 servers and terraform figures out how to create them
+Version controlled: you can track the history of your infrastructure changes just like application code
+
+State Management : Terraform keeps track of your real-world resources in a state file 
+acting as the source of truth
+
+Modular: you can package code into modules to reuse common patterns (eg:a standard "web server"module used by all teams)
+
+defines infrastructure as code for repeatable and reliable deployments
+
+provisions modifies and destroys resources through an automated workflow
+
+supports multicloud 
+
+enhances scalability,reusability,and operational efficiency across industries
+
+Registry -->infra as code -->Terraform cloud -->aws
+
+
+Statefile 
+-----------
+this is the brain of terraform it maps your code to the real world resources
+
+if you delete a resource from your code.terraform looks at the state file to find the
+ID of the real resource and delete it from the cloud
+
+in teams this file is stored remotely (eg,in an AWS S3 bucket) so everyone works of the same maps
+
+Terraform commands 
+-----------------------
+terraform --help -->to see the list of available commands in terraform
+Primary terraform commands
+---------------------------
+Terraform init : prepares your directory to run other terraform commands
+
+Terraform Validate : check if the configuration is Validate
+
+Terraform Plan : shows what will be made to your infrastructure
+
+Terraform Apply : Executes the changes to Create or modify your infrastructure
+
+Terraform Destroy : Deletes the infra that was previously created
+
+
+EX: Creating AWS VPC 
+
+resource "aws_vpc" "default_vpc"{
+cidr_block ="172.31.0.0/16"
+tags = {
+			Name = "example_vpc"
+	}
+}
+
+3.Terraform provider 
+Terraform provider defines the resource types and data sources 
+it acts as bridge between Terraform and infrastructure Platforms
+supports cloud providers,datacenters,network devices,and databases
+enable consistent provisioning across multiple environments
+
+Terraform Modules
+---------------------
+A terraform module is a container for a  set of related resources that perform a specific task
+enabling organized and reusable infrastructure code
+Module Block
+---------------
+defined using the Module block in terraform configuration,which includes 
+source
+name
+version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
