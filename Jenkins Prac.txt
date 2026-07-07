@@ -1,0 +1,56 @@
+jenkins port is 8080
+
+source ip is anywhere
+
+jenkins master is where jenkins is installed
+
+jenkins master is only used for scheduling purpose not every single job should not be done 
+on jenkins master
+
+latest approach jenkins and docker as agents 
+jenkins pipeline using docker container
+docker container is light in weight
+containers can be anytime created destroyed
+if app is light in weight the container approach is good
+
+how to configure docker
+---------------------------
+install docker in ec2 instance where jenkins is installed
+
+-->sudo apt update
+
+-->sudo apt install docker.io
+
+sudo su - 
+usermod -aG docker jenkins
+usermod -aG docker ubuntu
+systemctl restart docker
+
+Once you are done with the above steps, it is better to restart Jenkins.
+
+docker installation will create docker group
+
+who ever wants access to docker daemon  add them to the docker group
+
+jenkins installation will create jenkins user
+
+
+after adding the jenkins user also able to create ccontainers
+
+once you installed docker daemon you need to install docker pipeline plugi to run docker as
+agent to run docker  as agent jenkins should understand that whenever the user provides a 
+specific job jenkins need configuartion that why it is needed docker pipelline plugin
+
+
+there are multiple way creating a multiple projects like freestyle and pipeline projects
+
+Drawback for the freestyle is it is not a declarative approach
+for ex: if somebody wants to change or update it is not easy 
+
+to overcome this problem jenkins comes up with pipeline approach
+pipeline is a declarative approach
+we can write stages 
+
+
+Depending upon organization the stages may be increased
+
